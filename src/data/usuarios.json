@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "username": "chefmaster",
+    "nome": "João da Silva",
+    "senha": "senha123",
+    "email": "joao@chefpro.com"
+  },
+  {
+    "id": 2,
+    "username": "cozinheira99",
+    "nome": "Maria Souza",
+    "senha": "boloDeChocolate",
+    "email": "maria@chefpro.com"
+  },
+  {
+    "id": 3,
+    "username": "admin",
+    "nome": "Administrador",
+    "senha": "123",
+    "email": "admin@chefpro.com"
+  }
+]

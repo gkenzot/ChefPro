@@ -1,0 +1,23 @@
+.receita-detalhes-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.autor, .tempo {
+  color: var(--dark-orange);
+  margin: 0.5rem 0;
+}
+
+.ingredientes, .preparo {
+  margin: 2rem 0;
+}
+
+.ingredientes ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.ingredientes li {
+  margin-bottom: 0.5rem;
+}

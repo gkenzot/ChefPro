@@ -1,0 +1,166 @@
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.auth-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: opacity 0.2s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+.logout-btn {
+  background: transparent;
+  color: white;
+  border: 2px solid transparent;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alterado para flex-start */
+  gap: 0.5rem; /* Adicionado espaçamento entre ícone e texto */
+  transition: all 0.3s ease;
+  width: 100%; /* Ocupa toda a largura */
+}
+
+.logout-btn:hover {
+  border-color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transform: translateY(-2px);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: auto;
+  order: 2;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    padding: 0.5rem 1rem;
+  }
+  
+  .mobile-menu-button {
+    display: block;
+  }
+  
+  .header-right {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0;
+    gap: 1rem;
+    order: 3;
+  }
+  
+  .header-right.mobile-menu-open {
+    display: flex;
+  }
+  
+  .main-nav, .auth-nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .main-nav a, 
+  .auth-nav a {
+    padding: 0.5rem 0;
+    width: 100%;
+    display: block;
+    margin-left: 0;
+  }
+  
+  /* Ajustes específicos para o logout no mobile */
+  .auth-nav {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .auth-nav > * {
+    width: 100%;
+  }
+  
+  .logout-btn {
+    padding: 0.5rem 0;
+    margin: 0;
+    border: none;
+    background: none;
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-container h1 {
+    font-size: 1.2rem;
+  }
+  
+  .logo {
+    height: 32px;
+  }
+  
+  .header-container {
+    padding: 0.5rem;
+  }
+}

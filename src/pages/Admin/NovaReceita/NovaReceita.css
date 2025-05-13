@@ -1,0 +1,112 @@
+/* src/pages/Admin/NovaReceita/NovaReceita.css */
+.nova-receita-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.nova-receita-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.receita-form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.ingrediente-input {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.ingrediente-input input {
+  flex: 1;
+  margin-right: 8px;
+}
+
+.remove-ingrediente {
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-ingrediente {
+  background: #e0e0e0;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.add-ingrediente:hover {
+  background: #d0d0d0;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.submit-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background: #45a049;
+}
+
+.cancel-btn {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cancel-btn:hover {
+  background: #d32f2f;
+}

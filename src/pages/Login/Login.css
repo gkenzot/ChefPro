@@ -1,0 +1,105 @@
+/* Container principal */
+.auth-page-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url('/images/home-bg.jpg') center/cover no-repeat;
+  padding: 2rem;
+}
+
+/* Container do formulário */
+.auth-form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2.5rem;
+  background-color: rgba(36, 25, 6, 0.5);
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Título */
+.auth-title {
+  color: var(--off-white);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+/* Formulário */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Grupos de input */
+.auth-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Labels */
+.auth-label {
+  color: var(--off-white);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Inputs */
+.auth-input {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.auth-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--dark-orange);
+}
+
+/* Botão de submit */
+.auth-submit-btn {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 0.5rem;
+  background-color: var(--dark-orange);
+  color: var(--off-white);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-submit-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(230, 122, 0, 0.3);
+}
+
+/* Link alternativo */
+.auth-alternate-action {
+  margin-top: 1.5rem;
+  color: var(--off-white);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.auth-link {
+  color: var(--accent-yellow);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}

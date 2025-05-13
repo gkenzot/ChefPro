@@ -1,0 +1,141 @@
+{
+  "receitas": [
+    {
+      "id": 1,
+      "nome": "Omelete Simples",
+      "autor": "Ana Silva",
+      "ingredientes": [
+        "2 ovos",
+        "1 colher de sopa de leite",
+        "Sal a gosto",
+        "Pimenta a gosto",
+        "1 colher de sopa de manteiga",
+        "Queijo ralado (opcional)"
+      ],
+      "modo_de_preparo": "Bata os ovos com o leite, sal e pimenta. Aqueça a manteiga em uma frigideira, despeje a mistura e cozinhe em fogo médio. Quando estiver firme, vire para dourar o outro lado. Adicione queijo se desejar.",
+      "tempo_total": "10 minutos"
+    },
+    {
+      "id": 2,
+      "nome": "Arroz Branco",
+      "autor": "Carlos Oliveira",
+      "ingredientes": [
+        "1 xícara de arroz",
+        "2 xícaras de água",
+        "1 dente de alho",
+        "1 colher de sopa de óleo",
+        "Sal a gosto"
+      ],
+      "modo_de_preparo": "Refogue o alho no óleo, acrescente o arroz e misture bem. Adicione a água e o sal, tampe a panela e cozinhe em fogo baixo até a água secar.",
+      "tempo_total": "20 minutos"
+    },
+    {
+      "id": 3,
+      "nome": "Macarrão com Alho e Óleo",
+      "autor": "Mariana Costa",
+      "ingredientes": [
+        "200g de macarrão",
+        "3 dentes de alho",
+        "3 colheres de sopa de azeite",
+        "Sal a gosto",
+        "Salsinha picada"
+      ],
+      "modo_de_preparo": "Cozinhe o macarrão conforme as instruções da embalagem. Enquanto isso, refogue o alho no azeite até dourar. Escorra o macarrão e misture com o alho e azeite. Finalize com salsinha.",
+      "tempo_total": "15 minutos"
+    },
+    {
+      "id": 4,
+      "nome": "Salada Caesar",
+      "autor": "Ricardo Santos",
+      "ingredientes": [
+        "1 alface romana",
+        "1 xícara de croutons",
+        "Queijo parmesão ralado",
+        "Molho Caesar a gosto"
+      ],
+      "modo_de_preparo": "Lave e rasgue as folhas de alface. Adicione os croutons, o queijo parmesão e regue com o molho Caesar. Misture bem e sirva.",
+      "tempo_total": "10 minutos"
+    },
+    {
+      "id": 5,
+      "nome": "Panqueca de Banana",
+      "autor": "Fernanda Lima",
+      "ingredientes": [
+        "1 banana madura",
+        "1 ovo",
+        "2 colheres de sopa de aveia",
+        "1 pitada de canela"
+      ],
+      "modo_de_preparo": "Amasse a banana, misture com o ovo, a aveia e a canela. Aqueça uma frigideira antiaderente e despeje a mistura. Cozinhe até dourar dos dois lados.",
+      "tempo_total": "15 minutos"
+    },
+    {
+      "id": 6,
+      "nome": "Sopa de Legumes",
+      "autor": "Gustavo Rocha",
+      "ingredientes": [
+        "2 batatas",
+        "1 cenoura",
+        "1/2 abobrinha",
+        "1 litro de água",
+        "Sal e temperos a gosto"
+      ],
+      "modo_de_preparo": "Descasque e pique os legumes. Coloque na panela com água e sal. Cozinhe até os legumes ficarem macios. Bata no liquidificador se desejar uma sopa cremosa.",
+      "tempo_total": "30 minutos"
+    },
+    {
+      "id": 7,
+      "nome": "Sanduíche Natural",
+      "autor": "Patrícia Almeida",
+      "ingredientes": [
+        "2 fatias de pão integral",
+        "1 folha de alface",
+        "2 fatias de tomate",
+        "1 fatia de queijo branco",
+        "1 colher de sopa de maionese"
+      ],
+      "modo_de_preparo": "Passe a maionese no pão, coloque o alface, o tomate e o queijo. Feche o sanduíche e corte ao meio.",
+      "tempo_total": "5 minutos"
+    },
+    {
+      "id": 8,
+      "nome": "Bolo de Caneca",
+      "autor": "Lucas Mendes",
+      "ingredientes": [
+        "4 colheres de sopa de farinha de trigo",
+        "3 colheres de sopa de açúcar",
+        "1 ovo",
+        "3 colheres de sopa de leite",
+        "1 colher de sopa de óleo",
+        "1 colher de chá de fermento"
+      ],
+      "modo_de_preparo": "Misture todos os ingredientes em uma caneca. Leve ao micro-ondas por 3 minutos em potência alta.",
+      "tempo_total": "5 minutos"
+    },
+    {
+      "id": 9,
+      "nome": "Pipoca Doce",
+      "autor": "Juliana Vasconcelos",
+      "ingredientes": [
+        "1/2 xícara de milho para pipoca",
+        "2 colheres de sopa de açúcar",
+        "2 colheres de sopa de óleo"
+      ],
+      "modo_de_preparo": "Coloque todos os ingredientes em uma panela com tampa. Leve ao fogo médio, mexendo até começar a estourar. Quando os estouros diminuírem, retire do fogo.",
+      "tempo_total": "10 minutos"
+    },
+    {
+      "id": 10,
+      "nome": "Vitamina de Banana",
+      "autor": "Roberto Nunes",
+      "ingredientes": [
+        "1 banana",
+        "1 copo de leite",
+        "1 colher de sopa de açúcar (opcional)",
+        "1 colher de sopa de aveia"
+      ],
+      "modo_de_preparo": "Bata todos os ingredientes no liquidificador até ficar homogêneo. Sirva gelado.",
+      "tempo_total": "5 minutos"
+    }
+  ]
+}

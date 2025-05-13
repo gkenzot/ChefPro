@@ -1,0 +1,35 @@
+:root {
+  --off-white: #FFF9F0;  /* Branco levemente amarelado (como clara de ovo) */
+  --dark-orange: #E67A00;  /* Laranja mais escuro e sofisticado */
+  --text-dark: #333333;   /* Preto suave para texto escuro */
+  --text-light: #FFFFFF;  /* Branco puro para texto claro */
+  
+  /* Cores adicionais sugeridas */
+  --card-bg: #FFF2D8;     /* Amarelo muito claro (como pena de pato) para cards */
+  --header-footer: #FF9933; /* Laranja vibrante para header/footer */
+  --accent-yellow: #FFCC00; /* Amarelo do pato para detalhes */
+}
+
+body {
+  background-color: var(--off-white);
+  color: var(--text-dark);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.orange-bg {
+  background-color: var(--dark-orange);
+  color: var(--text-light);
+}
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  min-height: 0;
+}
