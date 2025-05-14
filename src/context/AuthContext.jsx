@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
     );
     
     if (usuario) {
-      setUser(usuario); // Armazena todos os dados do usuário
+      setUser(usuario);
       navigate("/admin");
     } else {
       alert("Credenciais inválidas!");
@@ -28,7 +28,7 @@ export const AuthProvider = ({ children }) => {
   // Logout
   const logout = () => {
     setUser(null);
-    navigate("/login"); // Redireciona para a página de login
+    navigate("/login");
   };
 
   return (

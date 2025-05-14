@@ -7,7 +7,6 @@ export default function Admin() {
   const { user } = useAuth();
   const location = useLocation();
 
-  // Verifica se a rota atual é a página principal do admin
   const isAdminHome = location.pathname === '/admin';
 
   return (

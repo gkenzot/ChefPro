@@ -8,7 +8,7 @@ import ReceitaDetalhes from "./pages/ReceitaDetalhes/ReceitaDetalhes";
 import Login from "./pages/Login/Login";
 import Admin from "./pages/Admin/Admin";
 import NovaReceita from "./pages/Admin/NovaReceita/NovaReceita";
-import EditarReceita from "./pages/Admin/EditarReceita/EditarReceita"; // Importe o novo componente
+import EditarReceita from "./pages/Admin/EditarReceita/EditarReceita";
 import ListaReceitas from "./pages/Admin/ListaReceitas/ListaReceitas";
 import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 

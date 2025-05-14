@@ -1,4 +1,3 @@
-/* Cabeçalho com botão de nova receita */
 .receitas-header {
   display: flex;
   justify-content: space-between;
@@ -8,34 +7,29 @@
   gap: 1rem;
 }
 
-/* Botão de nova receita (modificado) */
 .receitas-header .ver-receita-btn {
   padding: 0.6rem 1.2rem;
   font-weight: bold;
 }
 
-/* Container de ações nos cards */
 .receita-actions {
   display: flex;
   gap: 0.5rem;
   margin-top: 1rem;
 }
 
-/* Botões específicos da administração */
 .editar-btn {
-  background-color: #4a89dc; /* Azul para editar */
+  background-color: #4a89dc;
 }
 
 .excluir-btn {
-  background-color: #e74c3c; /* Vermelho para excluir */
+  background-color: #e74c3c;
 }
 
-/* Garantir que os botões tenham o mesmo tamanho */
 .receita-actions .ver-receita-btn {
   flex: 1;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .receitas-header {
     flex-direction: column;

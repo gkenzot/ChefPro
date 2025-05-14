@@ -1,6 +1,6 @@
 .admin-layout {
   display: flex;
-  min-height: calc(100% - altura_do_header); /* Ajuste conforme seu header */
+  min-height: calc(100% - altura_do_header);
   width: 100%;
 }
 

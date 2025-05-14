@@ -36,25 +36,13 @@ export default function NovaReceita() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Simulando envio para a API
     const novaReceita = {
       ...receita,
-      id: Math.floor(Math.random() * 10000) // ID temporário
+      id: Math.floor(Math.random() * 10000)
     };
 
     console.log('Receita a ser enviada:', novaReceita);
     
-    // Aqui você faria a chamada à API real:
-    // fetch('http://localhost:3000/receitas', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify(novaReceita)
-    // })
-    // .then(response => response.json())
-    // .then(() => navigate('/admin/receitas'))
-    // .catch(error => console.error('Erro:', error));
-
-    // Redirecionamento temporário (simulado)
     alert('Receita cadastrada com sucesso! (simulação)');
     navigate('/admin/receitas');
   };

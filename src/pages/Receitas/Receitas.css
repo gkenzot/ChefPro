@@ -1,4 +1,3 @@
-/* Estilos base compartilhados por ambas as páginas */
 .receitas-container {
   flex: 1;
   padding: 2rem 0;
@@ -28,7 +27,6 @@
   transform: translateY(-5px);
 }
 
-/* Botão base que será usado em ambas */
 .ver-receita-btn {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -44,6 +42,6 @@
 }
 
 .ver-receita-btn:hover {
-  background-color: #d46a00; /* Tom mais escuro do laranja */
+  background-color: #d46a00;
   transform: scale(1.02);
 }

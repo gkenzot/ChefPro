@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
 import receitasData from '../../../data/database.json';
-import '../../Receitas/Receitas.css'; // Importa os estilos base
-import './ListaReceitas.css'; // Importa os estilos específicos
-
+import '../../Receitas/Receitas.css';
+import './ListaReceitas.css';
 export default function ListaReceitas() {
   const { receitas } = receitasData;
 
