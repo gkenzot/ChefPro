@@ -1,6 +1,10 @@
+/* Estilos base compartilhados por ambas as páginas */
 .receitas-container {
   flex: 1;
-  padding: 2rem;
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 2rem;
+  width: 100%;
 }
 
 .receitas-grid {
@@ -16,24 +20,30 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .receita-card:hover {
   transform: translateY(-5px);
 }
 
+/* Botão base que será usado em ambas */
 .ver-receita-btn {
   display: inline-block;
-  margin-top: 1rem;
   padding: 0.5rem 1rem;
   background-color: var(--dark-orange);
   color: var(--off-white);
   text-decoration: none;
   border-radius: 4px;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
 }
 
 .ver-receita-btn:hover {
-  background-color: var(--dark-orange);
-  color: var(--off-white);
+  background-color: #d46a00; /* Tom mais escuro do laranja */
+  transform: scale(1.02);
 }

@@ -34,7 +34,8 @@ export default function Header() {
         <div className={`header-right ${mobileMenuOpen ? 'mobile-menu-open' : ''}`}>
           <nav className="main-nav">
             <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-            <Link to={user ? "/admin/lista" : "/receitas"} onClick={() => setMobileMenuOpen(false)}>Receitas</Link>
+            <Link to="/receitas" onClick={() => setMobileMenuOpen(false)}>Receitas</Link>
+            {user && <Link to="/admin/lista" onClick={() => setMobileMenuOpen(false)}>Gerenciar</Link>}
             {user && <Link to="/admin/nova" onClick={() => setMobileMenuOpen(false)}>Nova Receita</Link>}
           </nav>
           

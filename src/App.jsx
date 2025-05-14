@@ -10,6 +10,7 @@ function App() {
       <div className="app-layout">
         <Header />
         <main className="main-content">
+
           <Outlet />
         </main>
         <Footer />

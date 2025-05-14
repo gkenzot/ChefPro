@@ -1,71 +1,27 @@
-.admin-container {
-  flex:1;
-}
-
-/* Mantendo TODOS os estilos originais da Receitas.css */
-.receitas-container {
-  flex: 1;
-  padding: 2rem;
-}
-
+/* Cabeçalho com botão de nova receita */
 .receitas-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
+/* Botão de nova receita (modificado) */
 .receitas-header .ver-receita-btn {
-  max-width: 130px;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
 }
 
-.receitas-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.receita-card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-  display: flex;
-  flex-direction: column;
-}
-
-.receita-card:hover {
-  transform: translateY(-5px);
-}
-
+/* Container de ações nos cards */
 .receita-actions {
   display: flex;
   gap: 0.5rem;
+  margin-top: 1rem;
 }
 
-/* Botões - mantendo o estilo original */
-.ver-receita-btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: var(--dark-orange);
-  color: var(--off-white);
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-  flex: 1;
-  text-align: center;
-  font-size: 0.9rem;
-  border: none;
-  cursor: pointer;
-}
-
-.ver-receita-btn:hover {
-  background-color: #d46a00; /* Tom mais escuro do laranja */
-}
-
-/* Apenas modificando cores para os novos botões */
+/* Botões específicos da administração */
 .editar-btn {
   background-color: #4a89dc; /* Azul para editar */
 }
@@ -74,8 +30,19 @@
   background-color: #e74c3c; /* Vermelho para excluir */
 }
 
-/* Garantindo que o botão nova receita tenha mais destaque */
-.receitas-header .ver-receita-btn {
-  padding: 0.6rem 1.2rem;
-  font-weight: bold;
+/* Garantir que os botões tenham o mesmo tamanho */
+.receita-actions .ver-receita-btn {
+  flex: 1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .receitas-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .receita-actions {
+    flex-direction: column;
+  }
 }

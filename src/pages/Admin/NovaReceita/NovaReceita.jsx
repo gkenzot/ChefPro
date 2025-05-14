@@ -145,7 +145,7 @@ export default function NovaReceita() {
           </button>
           <button
             type="button"
-            onClick={() => navigate('/admin/receitas')}
+            onClick={() => navigate('/admin/lista')}
             className="cancel-btn"
           >
             Cancelar

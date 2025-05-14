@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import receitasData from '../../../data/database.json';
-import './ListaReceitas.css';
+import '../../Receitas/Receitas.css'; // Importa os estilos base
+import './ListaReceitas.css'; // Importa os estilos específicos
 
 export default function ListaReceitas() {
   const { receitas } = receitasData;
@@ -15,7 +16,7 @@ export default function ListaReceitas() {
     <div className="receitas-container">
       <div className="receitas-header">
         <h2>Gerenciar Receitas</h2>
-        <Link to="/admin/receitas/nova" className="ver-receita-btn">
+        <Link to="/admin/nova" className="ver-receita-btn">
           + Nova Receita
         </Link>
       </div>
@@ -28,10 +29,7 @@ export default function ListaReceitas() {
             <p>Tempo: {receita.tempo_total}</p>
             
             <div className="receita-actions">
-              <Link 
-                to={`/receitas/${receita.id}`} 
-                className="ver-receita-btn"
-              >
+              <Link to={`/receitas/${receita.id}`} className="ver-receita-btn">
                 Visualizar
               </Link>
               <Link 

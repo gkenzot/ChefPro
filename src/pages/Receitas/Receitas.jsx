@@ -14,9 +14,14 @@ export default function Receitas() {
             <h3>{receita.nome}</h3>
             <p>Por: {receita.autor}</p>
             <p>Tempo: {receita.tempo_total}</p>
-            <Link to={`/receitas/${receita.id}`} className="ver-receita-btn">
-              Ver Receita
-            </Link>
+
+            <div className="receita-actions">
+              <Link to={`/receitas/${receita.id}`}
+                className="ver-receita-btn"
+              >
+                Visualizar
+              </Link>
+            </div>
           </div>
         ))}
       </div>

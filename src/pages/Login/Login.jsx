@@ -47,7 +47,9 @@ export default function Login() {
           </button>
         </form>
         <p className="auth-alternate-action">
-          <Link to="#" className="auth-link">Esqueceu a senha?</Link>
+          <Link to="#" className="auth-link">Esqueceu a senha?
+          <p>admin@chefpro.com / 123</p>
+          </Link>
         </p>
       </div>
     </div>
