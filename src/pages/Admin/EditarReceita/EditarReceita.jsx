@@ -1,10 +1,12 @@
-// src/pages/Admin/NovaReceita/NovaReceita.jsx
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './NovaReceita.css';
+// src/pages/Admin/EditarReceita/EditarReceita.jsx
+import { useState, useEffect } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+import { getReceitaById, updateReceita } from '../../../data/receitasService';
+import '../NovaReceita/NovaReceita.css';
 
-export default function NovaReceita() {
+export default function EditarReceita() {
   const navigate = useNavigate();
+  const { id } = useParams();
   const [receita, setReceita] = useState({
     nome: '',
     autor: '',
@@ -12,6 +14,23 @@ export default function NovaReceita() {
     modo_de_preparo: '',
     tempo_total: ''
   });
+  const [carregando, setCarregando] = useState(true);
+
+  useEffect(() => {
+    const carregarReceita = () => {
+      const receitaEncontrada = getReceitaById(id);
+      
+      if (receitaEncontrada) {
+        setReceita(receitaEncontrada);
+      } else {
+        alert('Receita não encontrada!');
+        navigate('/admin/lista');
+      }
+      setCarregando(false);
+    };
+
+    carregarReceita();
+  }, [id, navigate]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -36,32 +55,28 @@ export default function NovaReceita() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Simulando envio para a API
-    const novaReceita = {
-      ...receita,
-      id: Math.floor(Math.random() * 10000) // ID temporário
-    };
-
-    console.log('Receita a ser enviada:', novaReceita);
-    
-    // Aqui você faria a chamada à API real:
-    // fetch('http://localhost:3000/receitas', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify(novaReceita)
-    // })
-    // .then(response => response.json())
-    // .then(() => navigate('/admin/receitas'))
-    // .catch(error => console.error('Erro:', error));
-
-    // Redirecionamento temporário (simulado)
-    alert('Receita cadastrada com sucesso! (simulação)');
-    navigate('/admin/receitas');
+    try {
+      const atualizou = updateReceita(id, receita);
+      
+      if (atualizou) {
+        alert('Receita atualizada com sucesso!');
+        navigate('/admin/lista');
+      } else {
+        throw new Error('Falha ao atualizar receita');
+      }
+    } catch (error) {
+      console.error('Erro ao salvar receita:', error);
+      alert('Erro ao salvar alterações. Verifique o console para mais detalhes.');
+    }
   };
+
+  if (carregando) {
+    return <div className="nova-receita-container">Carregando...</div>;
+  }
 
   return (
     <div className="nova-receita-container">
-      <h2>Adicionar Nova Receita</h2>
+      <h2>Editar Receita</h2>
       
       <form onSubmit={handleSubmit} className="receita-form">
         <div className="form-group">
@@ -141,11 +156,11 @@ export default function NovaReceita() {
 
         <div className="form-actions">
           <button type="submit" className="submit-btn">
-            Salvar Receita
+            Salvar Alterações
           </button>
           <button
             type="button"
-            onClick={() => navigate('/admin/receitas')}
+            onClick={() => navigate('/admin/lista')}
             className="cancel-btn"
           >
             Cancelar

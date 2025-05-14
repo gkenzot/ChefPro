@@ -8,6 +8,7 @@ import ReceitaDetalhes from "./pages/ReceitaDetalhes/ReceitaDetalhes";
 import Login from "./pages/Login/Login";
 import Admin from "./pages/Admin/Admin";
 import NovaReceita from "./pages/Admin/NovaReceita/NovaReceita";
+import EditarReceita from "./pages/Admin/EditarReceita/EditarReceita"; // Importe o novo componente
 import ListaReceitas from "./pages/Admin/ListaReceitas/ListaReceitas";
 import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 
@@ -21,27 +22,27 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorBoundary />, // Adicionado aqui
+    errorElement: <ErrorBoundary />,
     children: [
       { 
         index: true, 
         element: <Home />,
-        errorElement: <ErrorBoundary /> // Opcional: por rota
+        errorElement: <ErrorBoundary />
       },
       { 
         path: "receitas", 
         element: <Receitas />,
-        errorElement: <ErrorBoundary /> // Opcional: por rota
+        errorElement: <ErrorBoundary />
       },
       { 
         path: "receitas/:id", 
         element: <ReceitaDetalhes />,
-        errorElement: <ErrorBoundary /> // Opcional: por rota
+        errorElement: <ErrorBoundary />
       },
       { 
         path: "login", 
         element: <Login />,
-        errorElement: <ErrorBoundary /> // Opcional: por rota
+        errorElement: <ErrorBoundary />
       },
       
       // Rotas protegidas (admin)
@@ -52,17 +53,22 @@ const router = createBrowserRouter([
             <Admin />
           </ProtectedRoute>
         ),
-        errorElement: <ErrorBoundary />, // Para toda a seção admin
+        errorElement: <ErrorBoundary />,
         children: [
           { 
             path: "lista", 
             element: <ListaReceitas />,
-            errorElement: <ErrorBoundary /> // Opcional: por rota
+            errorElement: <ErrorBoundary />
           },
           { 
             path: "nova", 
             element: <NovaReceita />,
-            errorElement: <ErrorBoundary /> // Opcional: por rota
+            errorElement: <ErrorBoundary />
+          },
+          { 
+            path: "editar/:id", 
+            element: <EditarReceita />,
+            errorElement: <ErrorBoundary />
           },
         ],
       },

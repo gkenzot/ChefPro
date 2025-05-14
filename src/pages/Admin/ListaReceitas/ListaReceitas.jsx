@@ -33,7 +33,7 @@ export default function ListaReceitas() {
                 Visualizar
               </Link>
               <Link 
-                to={`/admin/receitas/editar/${receita.id}`} 
+                to={`/admin/editar/${receita.id}`} 
                 className="ver-receita-btn editar-btn"
               >
                 Editar
